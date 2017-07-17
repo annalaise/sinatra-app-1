@@ -4,8 +4,10 @@
     <img src='http://f.cl.ly/items/0k0v3e2X3l2f3i1n1Y19/Screen%20Shot%202013-09-10%20at%2011.32.00.png' style='border:4px dashed red'>
   </div>
 
-  <form action="/named-cat" method="post">
+  <% if @name == nil %>
+    <form action="/named-cat" method="post">
     Enter a name for the cat:<br>
     <input type="text" name="name"><br>
     <input type="submit" value="Submit"><br>
-  </form>
+    </form>
+  <% end %>

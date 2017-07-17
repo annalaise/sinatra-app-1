@@ -20,3 +20,9 @@ get '/named-cat' do
   @name = params[:name]
   erb :named_cat
 end
+
+post '/named-cat' do
+  @name = params[:name]
+  puts params
+  erb :named_cat
+end

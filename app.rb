@@ -12,5 +12,5 @@ end
 
 get '/cat' do
   @name = ["Amigo", "Oscar", "Viking"].sample
-  erb :index, :locals => {:name => params[:name]}
+  erb :index
 end
